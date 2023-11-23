@@ -4,7 +4,7 @@ import './components/TopBar/TopBar'
 import './components/Dash/Dash'
 import TopBar from './components/TopBar/TopBar';
 import Dash from './components/Dash/Dash';
-import SquarePanel from './components/SquarePanel/SquarePanel';
+// import SquarePanel from './components/SquarePanel/SquarePanel';
 import MidPanel from './components/MidPanel/MidPanel';
 import FullPanel from './components/FullPanel/FullPanel';
 
