@@ -23,7 +23,7 @@ function TopBar({ onButtonClick, textContent }: TopBarProps) {
         <a title='github' href="https://github.com/delyan-kirov/">
           <img src={require("./github.png")} alt="github" style={{ width: '40px', height: '40px' }} />
         </a>
-        <a title='email' href="#" onClick={handleEmailClick}>
+        <a title='email' href="" onClick={handleEmailClick}>
           <img src={require("./email.png")} alt="email" style={{ width: '40px', height: '40px' }} />
         </a>
         <a title='linkedin' href="https://www.linkedin.com/in/delyan-kirov-7132401a6">

@@ -7,7 +7,8 @@ import Dash from './components/Dash/Dash';
 // import SquarePanel from './components/SquarePanel/SquarePanel';
 import MidPanel from './components/MidPanel/MidPanel';
 import FullPanel from './components/FullPanel/FullPanel';
-
+/* import FullPanel1 from './components/FullPanel/FullPanel1';
+*  */
 function App() {
   const [textareaContent, setTextareaContent] = useState<string>('');
 
@@ -22,18 +23,18 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <div className="TopBar">
-          <TopBar onButtonClick={handleButtonClick} textContent={textareaContent} />
-        </div>
+          <div className="TopBar">
+              <TopBar onButtonClick={handleButtonClick} textContent={textareaContent} />
+          </div>
         <div style={{ margin: '32px' }}></div>
         <div className='FullPanel'>
           <FullPanel></FullPanel>
         </div>
-        <div className="Dash">
-          <Dash onTextChange={handleTextChange} />
-        </div>
         <div className='MidPanel'>
           <MidPanel></MidPanel>
+        </div>
+        <div className="Dash">
+            <Dash onTextChange={handleTextChange} />
         </div>
         <div className='FullPanel'>
           <FullPanel></FullPanel>
