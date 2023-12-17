@@ -1,6 +1,7 @@
 import React from 'react';
 import './TopBar.css';
 import resume from './Masters_Thesis.pdf';
+import MidPanel from '../MidPanel/MidPanel';
 
 interface TopBarProps {
   onButtonClick: (textContent: string) => void;
@@ -31,6 +32,9 @@ function TopBar({ onButtonClick, textContent }: TopBarProps) {
         </a>
         <a title="resume" href={resume} target="_blank" rel="noopener noreferrer">
           <img src={require("./resume.png")} alt="resume" style={{ width: '40px', height: '40px' }} />
+        </a>
+        <a title="blog" href="/blog">
+          <img src={require("./blog.png")} style={{ width: '40px', height: '40px' }} />
         </a>
       </div>
     </div>

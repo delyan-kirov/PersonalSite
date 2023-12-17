@@ -9,40 +9,21 @@ import MidPanel from './components/MidPanel/MidPanel';
 import FullPanel from './components/FullPanel/FullPanel';
 /* import FullPanel1 from './components/FullPanel/FullPanel1';
 *  */
-function App() {
-  const [textareaContent, setTextareaContent] = useState<string>('');
+import About from './components/About/About';
+import { BrowserRouter as Router, Route, Link, Routes } from 'react-router-dom';
 
-  const handleTextChange = (newText: string) => {
-    setTextareaContent(newText);
-  };
-
-  const handleButtonClick = (textContent: string) => {
-    console.log(textContent);
-  };
-
+const App: React.FC = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-          <div className="TopBar">
-              <TopBar onButtonClick={handleButtonClick} textContent={textareaContent} />
-          </div>
-        <div style={{ margin: '32px' }}></div>
-        <div className='FullPanel'>
-          <FullPanel></FullPanel>
-        </div>
-        <div className='MidPanel'>
-          <MidPanel></MidPanel>
-        </div>
-        <div className="Dash">
-            <Dash onTextChange={handleTextChange} />
-        </div>
-        <div className='FullPanel'>
-          <FullPanel></FullPanel>
-        </div>
-      </header>
-    </div>
+    <Router>
+      <div>
+        <Routes>
+          <Route path="/blog" element={<MidPanel />} />
+          <Route path="/" element={<About />} />
+        </Routes>
+      </div>
+    </Router>
   );
-}
+};
 
 {/* <div className='SquarePanel'>
           <SquarePanel></SquarePanel>
