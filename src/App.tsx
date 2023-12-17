@@ -10,7 +10,7 @@ import FullPanel from './components/FullPanel/FullPanel';
 /* import FullPanel1 from './components/FullPanel/FullPanel1';
 *  */
 import About from './components/About/About';
-import { BrowserRouter as Router, Route, Link, Routes } from 'react-router-dom';
+import { HashRouter as Router, Route, Link, Routes } from 'react-router-dom';
 
 const App: React.FC = () => {
   return (
