@@ -33,7 +33,7 @@ function TopBar({ onButtonClick, textContent }: TopBarProps) {
         <a title="resume" href={resume} target="_blank" rel="noopener noreferrer">
           <img src={require("./resume.png")} alt="resume" style={{ width: '40px', height: '40px' }} />
         </a>
-        <a title="blog" href="/blog">
+        <a title="blog" href="/#/blog">
           <img src={require("./blog.png")} style={{ width: '40px', height: '40px' }} />
         </a>
       </div>
