@@ -1,0 +1,21 @@
+.Dash {
+    background-color: rgba(29, 154, 192, 0.233);
+    color: #ffffffc2;
+    padding: 1%;
+    position:relative;
+    top: 10%;
+    width: 90%;
+    margin: 2%;
+    border-radius: 20px;
+}
+
+.Dash textarea {
+    resize: none;
+    background-color: inherit;
+    color: inherit;
+    width: 90%;
+    border: none;
+    font: inherit;
+    caret-color: #fff;
+    outline: none;
+}

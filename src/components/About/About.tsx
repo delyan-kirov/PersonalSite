@@ -4,12 +4,8 @@ import '../TopBar/TopBar'
 import '../Dash/Dash'
 import TopBar from '../TopBar/TopBar';
 import Dash from '../Dash/Dash';
-// import SquarePanel from './components/SquarePanel/SquarePanel';
 import MidPanel from '../MidPanel/MidPanel';
 import FullPanel from '../FullPanel/FullPanel';
-/* import FullPanel1 from './components/FullPanel/FullPanel1';
-*  */
-import { BrowserRouter as Router, Route, Link, Routes } from 'react-router-dom';
 
 function About() {
   const [textareaContent, setTextareaContent] = useState<string>('');
@@ -45,9 +41,5 @@ function About() {
     </div>
   );
 }
-
-{/* <div className='SquarePanel'>
-          <SquarePanel></SquarePanel>
-        </div> */}
 
 export default About;

@@ -47,6 +47,7 @@ To learn React, check out the [React documentation](https://reactjs.org/).
 
 ** TODO
 
-- [ ] Host it on github pages
-- [ ] Make the design a little nicer
-- [ ] Document it and make it ready for viewing
+- [X] Host it on github pages
+- [X] Make the design a little nicer
+- [X] Document it and make it ready for viewing
+- [ ] Research how to make content load dynamically
