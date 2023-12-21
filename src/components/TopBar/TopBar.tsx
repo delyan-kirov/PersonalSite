@@ -1,14 +1,8 @@
 import React from 'react';
 import './TopBar.css';
 import resume from './Masters_Thesis.pdf';
-import MidPanel from '../MidPanel/MidPanel';
 
-interface TopBarProps {
-  onButtonClick: (textContent: string) => void;
-  textContent: string;
-}
-
-function TopBar({ onButtonClick, textContent }: TopBarProps) {
+function TopBar() {
   const handleEmailClick = () => {
     const emailAddress = 'delyan.k.kirov@gmail.com'
     // Generate the mailto link
@@ -17,7 +11,6 @@ function TopBar({ onButtonClick, textContent }: TopBarProps) {
     // Open the default email client with the pre-filled details
     window.location.href = mailtoLink;
   };
-
   return (
     <div className="topnav">
       <div className='socials'>
