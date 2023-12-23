@@ -1,21 +1,35 @@
-.Dash {
-    background-color: rgba(29, 154, 192, 0.233);
-    color: #ffffffc2;
-    padding: 1%;
-    position:relative;
-    top: 10%;
-    width: 90%;
-    margin: 2%;
-    border-radius: 20px;
+.BlogPosts {
+    background-color: #282c34;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 40px;
 }
 
-.Dash textarea {
-    resize: none;
-    background-color: inherit;
-    color: inherit;
-    width: 90%;
-    border: none;
-    font: inherit;
-    caret-color: #fff;
-    outline: none;
+.title {
+    color: #ffffffe5;
+    font-size: 50px;
+}
+
+.BlogList {
+    margin: 5px;
+    max-width: 99%;
+    font-size: 26px;
+    min-width: 75%;
+}
+
+.BlogEntrie {
+    cursor: pointer;
+    animation: fade-in-background 2s ease;
+    background-color: rgba(32, 135, 191, 0.452);
+    background-size: 100% 100%;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 3px 3px 10px 10px rgba(0, 0, 0, 0.195);
+    margin: 10px;
+    overflow: auto;
 }
