@@ -28,7 +28,7 @@ function BlogPosts() {
                             Blog
                         </a>
                     </p>
-                    <p> Something else </p>
+                    <p> Something else, test.</p>
                 </div>
             </div>
         </div>
