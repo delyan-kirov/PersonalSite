@@ -1,0 +1,17 @@
+.bottomNav {
+  padding-top: 34px;
+  padding-bottom: 24px;
+  width:100vw;
+  font-size: 25px;
+  justify-content: center;
+  background-color: #01121897;
+  backdrop-filter: blur(3px);
+  -webkit-backdrop-filter: blur(3px);
+}
+
+.bottomNav a {
+  padding: 0px 16px 0px 16px;
+  text-decoration: none;
+  border-radius: 20px;
+  color: rgba(251, 251, 251, 0.921);
+}

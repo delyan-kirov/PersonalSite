@@ -10,7 +10,7 @@ const FullPanel1 = () => {
       <div className="TopBar">
         <TopBar />
       </div>
-        <div style={{ margin: '32px' }}></div>
+        <div style={{ margin: '36px' }}></div>
       <div id="content" className="content">
         <h1 className="title">Using tikz in org</h1>
         <div id="outline-container-orgcc7d50f" className="outline-2">
