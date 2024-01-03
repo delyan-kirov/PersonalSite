@@ -17,7 +17,6 @@
     /* background-size: 100% 100%; */
     /* background-repeat: no-repeat; */
     background-color: rgba(0,  0, 0, 0.195);
-    animation: fade-in-background 2s ease;
     font-size: 30px;
 }
 

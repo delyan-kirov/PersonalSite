@@ -10,7 +10,7 @@ function SquarePanel() {
     <div className="square-panel">
 
       <motion.div
-        transition={{ duration: 1 }}
+        transition={{ duration: 0.6 }}
         initial={{ opacity: 0, transform: 'translateY(-40px)' }}
         whileInView={{ opacity: 1, transform: 'translateY(0)' }}
         viewport={{ once: true }}>
@@ -21,7 +21,7 @@ function SquarePanel() {
 
       <motion.div initial={{ opacity: 0, transform: 'translateY(-60px)' }}
         whileInView={{ opacity: 1, transform: 'translateY(0)' }}
-        transition={{ duration: 2, delay: 0.5 }}
+        transition={{ duration: 0.6, delay: 0.5 }}
         viewport={{ once: true }}>
         <div className="smaller-panel">
           <p> Hello!</p>

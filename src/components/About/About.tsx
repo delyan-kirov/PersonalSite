@@ -20,6 +20,7 @@ function About() {
           <FullPanel></FullPanel>
         </div>
         <div style={{margin: "5px"}}></div>
+        <div/>
         <div><BottomBar/></div>
       </header>
     </div>
