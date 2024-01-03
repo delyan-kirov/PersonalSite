@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect } from "react";
 import "./BlogPosts.css";
 import TopBar from "../TopBar/TopBar";
 import { motion } from "framer-motion";
@@ -72,7 +72,7 @@ function BlogPosts() {
             }}
           >
             <p>
-              <p title="blog">
+              <p title="BlogEntrieName">
                 Blog
               </p>
             </p>
@@ -95,7 +95,7 @@ function BlogPosts() {
             }}
           >
             <p>
-              <p title="blog">
+              <p title="BlogEntrieName">
                 Blog
               </p>
             </p>

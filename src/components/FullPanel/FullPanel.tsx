@@ -1,10 +1,10 @@
 import React, { } from 'react';
 import './FullPanel.css';
-import { motion, useScroll } from 'framer-motion';
+import { motion } from 'framer-motion';
 
 function SquarePanel() {
 
-  const { scrollYProgress } = useScroll();
+  // const { scrollYProgress } = useScroll();
 
   return (
     <div className="square-panel">
@@ -21,7 +21,7 @@ function SquarePanel() {
 
       <motion.div initial={{ opacity: 0, transform: 'translateY(-60px)' }}
         whileInView={{ opacity: 1, transform: 'translateY(0)' }}
-        transition={{ duration: 0.6, delay: 0.5 }}
+        transition={{ duration: 0.6, delay: 0.2 }}
         viewport={{ once: true }}>
         <div className="smaller-panel">
           <p> Hello!</p>
