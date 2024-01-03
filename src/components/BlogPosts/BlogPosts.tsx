@@ -3,12 +3,8 @@ import "./BlogPosts.css";
 import TopBar from "../TopBar/TopBar";
 import { motion } from "framer-motion";
 
-
-var i = 0.366;
-
 function BlogPosts() {
-
-
+  var i = 0.4;
   useEffect(() => {
     // Cleanup function to reset i when leaving the page
     return () => {
@@ -19,7 +15,7 @@ function BlogPosts() {
   function count(): number {
     i = 1.5 * i;
     console.log(i);
-    return (Math.log(i));
+    return (i);
   }
   return (
     <div className="BlogPosts">
