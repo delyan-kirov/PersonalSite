@@ -4,7 +4,7 @@ import { motion, useScroll } from "framer-motion";
 import TopBar from "../TopBar/TopBar";
 import TikzPicture from "./mytikzpicture.png"
 
-const FullPanel1 = () => {
+const Post1 = () => {
   return (
     <div className="blogBody">
       <div className="TopBar">
@@ -195,4 +195,4 @@ const FullPanel1 = () => {
   );
 };
 
-export default FullPanel1;
+export default Post1;

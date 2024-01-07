@@ -14,8 +14,8 @@ function TopBar() {
     return (
         <div className="topnav">
             <div className='socials'>
-                <a>Projects</a>
-                <a title="blog" href="/PersonalSite/">About</a>
+                <a title="projects" href="/PersonalSite/#/projects">Projects</a>
+                <a title="blog" href="/PersonalSite/#">About</a>
                 <a title="blog" href="/PersonalSite/#/blog">Blog</a>
             </div>
         </div>
