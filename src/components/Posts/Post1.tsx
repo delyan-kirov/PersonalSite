@@ -2,7 +2,7 @@ import React, {} from "react";
 import "./Styles.css";
 import { motion, useScroll } from "framer-motion";
 import TopBar from "../TopBar/TopBar";
-import TikzPicture from "./mytikzpicture.png"
+import TikzPicture from "./mytikzpicture.png";
 
 const Post1 = () => {
   return (
@@ -10,7 +10,7 @@ const Post1 = () => {
       <div className="TopBar">
         <TopBar />
       </div>
-        <div style={{ margin: '36px' }}></div>
+      <div style={{ margin: "36px" }}></div>
       <div id="content" className="content">
         <h1 className="title">Using tikz in org</h1>
         <div id="outline-container-orgcc7d50f" className="outline-2">

@@ -8,6 +8,7 @@ function BlogPosts() {
   useEffect(() => {
     // Cleanup function to reset i when leaving the page
     return () => {
+  // eslint-disable-next-line
       i = 0.366;
     };
   }, []);
@@ -15,7 +16,7 @@ function BlogPosts() {
   function count(): number {
     i = 1.5 * i;
     console.log(i);
-    return (i);
+    return i;
   }
   return (
     <div className="BlogPosts">
@@ -25,7 +26,7 @@ function BlogPosts() {
       {/* SPACE */}
       <div style={{ margin: "50px" }}></div>
       <div className="Title">
-        <p>Hello from BlogPosts!!!</p>
+        <p style={{ fontSize: "40px" }}>Hello from BlogPosts!!!</p>
       </div>
       {/* SPACE */}
       <div style={{ margin: "30px" }}></div>
