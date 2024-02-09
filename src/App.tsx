@@ -4,7 +4,7 @@ import About from './components/About/About';
 import { HashRouter as Router, Route, Link, Routes } from 'react-router-dom';
 import BlogPosts from './components/BlogPosts/BlogPosts';
 import Post1 from './components/Posts/Post1';
-import Resume from "./components/MidPanel/MidPanel"
+import Resume from "./components/Resume/Resume"
 
 const App: React.FC = () => {
     return (

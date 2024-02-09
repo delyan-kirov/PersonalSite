@@ -4,7 +4,7 @@ import "../TopBar/TopBar";
 import "../Dash/Dash";
 import TopBar from "../TopBar/TopBar";
 import Dash from "../Dash/Dash";
-import MidPanel from "../MidPanel/MidPanel";
+import Resume from "../Resume/Resume";
 import FullPanel from "../FullPanel/FullPanel";
 import BottomBar from "../BottomBar/BottomBar";
 

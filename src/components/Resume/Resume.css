@@ -1,0 +1,31 @@
+.mid-panel {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: calc(5px + 2vmin);
+  color: white;
+}
+
+.small-mid-panel {
+  margin: 3%;
+  padding: 250px;
+  background-color: rgba(58, 144, 193, 0.669);
+  background-size: 100% 100%;
+  border-radius: 20px;
+  box-shadow: 3px 10px 10px rgba(0, 0, 0, 0.195);
+}
+
+.inside-panel {
+  background-color: rgba(32, 135, 191, 0.452);
+  border-radius: 20px;
+  margin-left: 100px;
+  margin-right: 100px;
+  padding: 40px;
+  box-shadow: 3px 10px 10px rgba(0, 0, 0, 0.195);
+}
+
+.show-p {
+  color: rgba(240, 248, 255, 0);
+}
