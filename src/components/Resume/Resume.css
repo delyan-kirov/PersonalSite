@@ -8,24 +8,11 @@
   color: white;
 }
 
-.small-mid-panel {
-  margin: 3%;
-  padding: 250px;
-  background-color: rgba(58, 144, 193, 0.669);
-  background-size: 100% 100%;
-  border-radius: 20px;
-  box-shadow: 3px 10px 10px rgba(0, 0, 0, 0.195);
+.section {
+  background-color: #01121897;
+  width: 100%;
 }
 
-.inside-panel {
-  background-color: rgba(32, 135, 191, 0.452);
-  border-radius: 20px;
-  margin-left: 100px;
-  margin-right: 100px;
-  padding: 40px;
-  box-shadow: 3px 10px 10px rgba(0, 0, 0, 0.195);
-}
-
-.show-p {
-  color: rgba(240, 248, 255, 0);
+div.section > h1 {
+  padding:1%;
 }

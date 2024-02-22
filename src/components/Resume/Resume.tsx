@@ -6,23 +6,23 @@ function Resume() {
   return (
     <div className="mid-panel">
       <TopBar />
-      <div style={{ padding: "2%" }} />
-      <div>
-        <p>
+      <div style={{ padding: "3%" }} />
+      <div className="section">
+        <h1>
           Link to resume
-        </p>
+        </h1>
       </div>
       {/* */}
-      <div>
-        <p>
-          Experience
-        </p>
+      <div className="section" style={{ backgroundColor: "#282c34" }}>
+        <h1>
+          Resume
+        </h1>
       </div>
       {/* */}
-      <div>
-        <p>
+      <div className="section">
+        <h1>
           Projects
-        </p>
+        </h1>
       </div>
     </div>
   );
