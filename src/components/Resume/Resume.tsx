@@ -6,7 +6,7 @@ function Resume() {
   return (
     <div className="mid-panel">
       <TopBar />
-      <div style={{ padding: "3%" }} />
+      <div style={{ padding: "4.5vh", }} />
       <div className="section">
         <h1>
           Link to resume

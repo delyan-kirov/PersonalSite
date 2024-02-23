@@ -4,7 +4,7 @@ import TopBar from "../TopBar/TopBar";
 import { motion } from "framer-motion";
 
 function BlogPosts() {
-  var i = 0.4;
+  var i = 0.3;
   useEffect(() => {
     // Cleanup function to reset i when leaving the page
     return () => {

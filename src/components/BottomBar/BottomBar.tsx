@@ -1,6 +1,6 @@
 import React from 'react';
 import './BottomBar.css';
-import resume from './Masters_Thesis.pdf';
+import resume from './resume.pdf';
 
 function TopBar() {
   const handleEmailClick = () => {
