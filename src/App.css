@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  overflow:hidden;
 }
 
 .App-header {
@@ -8,6 +9,20 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  font-size: calc(5px + 2vmin);
+  font-size: calc(5px + 3vmin);
   color: white;
+}
+
+/* WebKit (Chrome, Safari) */
+::-webkit-scrollbar {
+  background-color: #282c34; /* color of the thumb */
+  width: 2px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #888; /* color of the thumb */
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #555; /* color of the thumb when hovered */
 }
