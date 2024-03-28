@@ -7,7 +7,6 @@
   align-items: center;
   font-size: calc(10px + 2vmin);
   color: white;
-  font-size: 36px;
 }
 
 .highlighted {
@@ -53,6 +52,7 @@ input::-webkit-inner-spin-button {
 }
 
 .SudokuBoard {
+  margin: 2vh;
   background-color: rgba(105, 90, 150, 0.3);
   border-radius: 12px;
   padding-top: 15px;

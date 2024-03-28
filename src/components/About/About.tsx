@@ -58,7 +58,7 @@ function About() {
         <div>
           <p className="show-p"></p>
           <br></br>
-          <div style={{ margin: "1%" }}>
+          <div style={{ margin: "2vh" }}>
             <p>
               {/* TODO: Add some links */}
               If you would like to know more about my projects, click on Resume!

@@ -2,39 +2,22 @@
   background-color: #282c34;
 }
 
-.title {
-  color: #ffffffe5;
-  font-size: 50px;
+a {
+  text-decoration: none; /* Remove underline */
+  color: rgba(18, 199, 209, 0.4); /* color of the thumb when hovered */
+}
+
+h1 {
+  color: rgba(160, 200, 240, 1);
 }
 
 .BlogList {
-  margin: 5px;
-  max-width: 99%;
-  font-size: 26px;
-
-  :hover {
-    color: rgb(150, 218, 250);
-  }
+  text-align: left;
 }
 
 .BlogEntrie {
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: white;
-  padding: 7%;
-
-  cursor: pointer;
-  background-color: rgba(17, 80, 114, 0.452);
-  background-size: 100% 100%;
-  border-radius: 20px;
-  box-shadow: 3px 3px 10px 10px rgba(0, 0, 0, 0.195);
+  margin: 1vh;
+  padding: 5vh;
+  border-radius: 10px;
   overflow: auto;
-}
-
-p[title="BlogEntrieName"] {
-  font-size: 60px;
-  padding-left: 8%;
-  font-weight: bold;
 }
