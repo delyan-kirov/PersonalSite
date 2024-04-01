@@ -1,9 +1,9 @@
 .bottomNav {
   padding-top: 34px;
   padding-bottom: 24px;
-  width:100vw;
+  width: 100vw;
   font-size: 25px;
-  background-color: #01121897;
+  background-color: rgba(32, 135, 191, 0.05);
   backdrop-filter: blur(3px);
   -webkit-backdrop-filter: blur(3px);
 }

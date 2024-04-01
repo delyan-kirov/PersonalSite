@@ -9,7 +9,7 @@
   font-size: 32px;
   padding: 16px;
   justify-content: center;
-  background-color: #01121897;
+  background-color: rgba(5, 10, 50, 0.7);
   backdrop-filter: blur(3px);
   -webkit-backdrop-filter: blur(3px);
 }
@@ -22,7 +22,7 @@
 }
 
 .topnav a:hover {
-  color: rgba(32, 135, 191, 0.452);
+  color: lightgreen;
 }
 
 .sepTopNav {

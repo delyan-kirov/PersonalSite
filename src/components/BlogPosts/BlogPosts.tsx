@@ -3,6 +3,8 @@ import "./BlogPosts.css";
 import TopBar from "../TopBar/TopBar";
 import { motion } from "framer-motion";
 import BottomBar from "../BottomBar/BottomBar";
+import PorstPhoto1 from "../Posts/mytikzpicture.png";
+import PorstPhoto2 from "../Posts/sudoku.png";
 
 function BlogPosts() {
   var i = 0.4;
@@ -20,7 +22,12 @@ function BlogPosts() {
     return i;
   }
 
-  function blogEntrie(Name: string, Discription: string, Link: string) {
+  function blogEntrie(
+    Name: string,
+    Discription: string,
+    Link: string,
+    Pic: string,
+  ) {
     return (
       <motion.div
         transition={{ duration: count() }}
@@ -28,10 +35,16 @@ function BlogPosts() {
         whileInView={{ opacity: 1, transform: "translateY(0)" }}
         viewport={{ once: true }}
       >
-        <div className="BlogEntrie">
-          <h1>{Name}</h1>
-          <p>{Discription}</p>
-          <a href={Link}>Read more</a>
+        <div className="smaller-panel">
+          <div className="BlogEntrie">
+            <img
+              className="PostEntryImage"
+              src={Pic}
+            />
+            <h1>{Name}</h1>
+            <p>{Discription}</p>
+            <a href={Link}>Read more</a>
+          </div>
         </div>
         <br />
       </motion.div>
@@ -47,13 +60,15 @@ function BlogPosts() {
         <div className="BlogList">
           {blogEntrie(
             "Haskell",
-            "nstead of just pairs, we can also define so called tagged unions. These are like a union of types, except that each type in the union needs it's own named constructor. For example, Foo = Bar Int | Baz Double. In this examole, a variable foo :: Foo is either a Bar Int or a Baz Double, not both. Note that the constructors Baz and Bar distinguish what is the left and right value. So foo = Bar 1, does not mean that foo is of type Int, or of type Bar Int. If you have data Myvar = LeftVar Int | RightVar Int, then the left integer is distinct from the right. Therefore, it's better to think of tagged unions as generating multi-sets, where different values of the same type are distinguished by constructors. In haskell, types can be recursive, this makes it possible to define lists as follows:",
+            "A short Haskell tutorial",
             "/PersonalSite/#/post1",
+            PorstPhoto1,
           )}
           {blogEntrie(
             "Sudoku",
             "A quick demo of my sudoku web application",
             "/PersonalSite/#/sudoku",
+            PorstPhoto2,
           )}
         </div>
 

@@ -1,3 +1,19 @@
 p {
   margin: 5px;
 }
+
+b {
+  color: lightgreen;
+}
+
+.popup {
+  position: fixed;
+  margin: 8px;
+  padding: 8px;
+  transform: translateX(+10%);
+  background-color: rgba(5, 10, 50, 1);
+  color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  z-index: 9999; /* Ensure the popup is above other content */
+}
