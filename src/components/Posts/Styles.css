@@ -1,5 +1,5 @@
 div.blogBody {
-  background-color: #282c34;
+  background-color: #000823;
   flex-direction: column;
   overflow: auto;
   align-items: center;
@@ -17,6 +17,7 @@ div.blogBody {
   margin-top: 2em;
   margin-bottom: 0.2em;
 }
+
 .subtitle {
   text-align: center;
   font-size: medium;

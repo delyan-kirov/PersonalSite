@@ -41,6 +41,7 @@ function BlogPosts() {
               className="PostEntryImage"
               src={Pic}
             />
+
             <h1>{Name}</h1>
             <p>{Discription}</p>
             <a href={Link}>Read more</a>

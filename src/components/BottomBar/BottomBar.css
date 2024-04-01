@@ -3,7 +3,7 @@
   padding-bottom: 24px;
   width: 100vw;
   font-size: 25px;
-  background-color: rgba(32, 135, 191, 0.05);
+  background-color: rgba(5, 20, 60, 0.5);
   backdrop-filter: blur(3px);
   -webkit-backdrop-filter: blur(3px);
 }
