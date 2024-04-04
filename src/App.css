@@ -13,6 +13,31 @@
   color: white;
 }
 
+h1 {
+  color: rgba(160, 200, 240, 1);
+}
+
+h2 {
+  color: rgba(160, 200, 240, 1);
+}
+
+h3 {
+  color: rgba(160, 200, 240, 1);
+}
+
+a {
+  text-decoration: none; /* Remove underline */
+  color: rgba(18, 199, 209, 0.4); /* color of the thumb when hovered */
+}
+
+p {
+  margin: 5px;
+}
+
+b {
+  color: lightgreen;
+}
+
 /* WebKit (Chrome, Safari) */
 ::-webkit-scrollbar {
   background-color: #282c34; /* color of the thumb */

@@ -2,29 +2,29 @@
   background-color: #282c34;
 }
 
-a {
-  text-decoration: none; /* Remove underline */
-  color: rgba(18, 199, 209, 0.4); /* color of the thumb when hovered */
-}
-
-h1 {
-  color: rgba(160, 200, 240, 1);
-}
-
-.BlogList {
-  margin: 0;
-  padding: 0;
-  text-align: left;
-}
-
 .BlogEntrie {
   border-radius: 10px;
-  overflow: auto;
+  position: relative;
 }
 
 .PostEntryImage {
-  width: 300px;
-  height: 300px;
+  width: 330px;
+  height: 330px;
   border: 5px solid lightblue;
   border-radius: 10%;
+}
+
+.BlogPosts-smaller-panel {
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 3px 3px 10px 10px rgba(0, 0, 0, 0.1);
+  margin: 20px;
+
+  background: -webkit-linear-gradient(
+    bottom,
+    rgba(240, 240, 240, 0.1),
+    rgba(240, 240, 240, 0.1) 20vh,
+    rgba(0, 20, 80, 0.2) 20vh,
+    rgba(0, 20, 80, 0.2)
+  );
 }

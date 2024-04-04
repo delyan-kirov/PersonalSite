@@ -54,7 +54,7 @@ function About() {
           transition={{ duration: 0.4, delay: 0.2 }}
           viewport={{ once: true }}
         >
-          <div className="smaller-panel">
+          <div className="About-smaller-panel">
             <h2>Hello!</h2>
             <p>
               I recently graduated from the University of Saint Andrews, looking

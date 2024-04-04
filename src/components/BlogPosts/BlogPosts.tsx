@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import { useEffect } from "react";
 import "./BlogPosts.css";
 import TopBar from "../TopBar/TopBar";
 import { motion } from "framer-motion";
@@ -25,6 +25,7 @@ function BlogPosts() {
   function blogEntrie(
     Name: string,
     Discription: string,
+    Date: Date,
     Link: string,
     Pic: string,
   ) {
@@ -35,7 +36,7 @@ function BlogPosts() {
         whileInView={{ opacity: 1, transform: "translateY(0)" }}
         viewport={{ once: true }}
       >
-        <div className="smaller-panel">
+        <div className="BlogPosts-smaller-panel">
           <div className="BlogEntrie">
             <img
               className="PostEntryImage"
@@ -43,8 +44,11 @@ function BlogPosts() {
             />
 
             <h1>{Name}</h1>
+            <h3 style={{ fontSize: "80%", color: "lightblue" }}>
+              {Date.toDateString()}
+            </h3>
             <p>{Discription}</p>
-            <a href={Link}>Read more</a>
+            <a className="BlogPosts-a" href={Link}>Read more</a>
           </div>
         </div>
         <br />
@@ -62,12 +66,14 @@ function BlogPosts() {
           {blogEntrie(
             "Haskell",
             "A short Haskell tutorial",
+            new Date(2024, 0, 1),
             "/PersonalSite/#/post1",
             PorstPhoto1,
           )}
           {blogEntrie(
             "Sudoku",
             "A quick demo of my sudoku web application",
+            new Date(2024, 0, 1),
             "/PersonalSite/#/sudoku",
             PorstPhoto2,
           )}
