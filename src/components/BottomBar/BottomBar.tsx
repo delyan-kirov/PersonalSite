@@ -1,62 +1,66 @@
-import React from "react";
 import "./BottomBar.css";
 import resume from "./resume.pdf";
+import githubIcon from "./github.png";
+import emailIcon from "./email.png";
+import linkedinIcon from "./linkedin.png";
+import resumeIcon from "./resume.png";
+import blogIcon from "./blog.png";
+
+const emailAddress = "delyan.k.kirov@gmail.com";
 
 function TopBar() {
   const handleEmailClick = () => {
-    const emailAddress = "delyan.k.kirov@gmail.com";
-    // Generate the mail to link
-    const mailtoLink = `mailto:${emailAddress}?subject=${encodeURIComponent("")
+    const mailtoLink = `mailto:${emailAddress}?subject=${encodeURIComponent(
+      "",
+    )
       }&body=${encodeURIComponent("")}`;
-
-    // Open the default email client with the pre-filled details
     window.location.href = mailtoLink;
   };
+
+  const socialIcons = [
+    {
+      title: "github",
+      href: "https://github.com/delyan-kirov/",
+      icon: githubIcon,
+    },
+    { title: "email", onClick: handleEmailClick, icon: emailIcon },
+    {
+      title: "linkedin",
+      href: "https://www.linkedin.com/in/delyan-kirov-7132401a6",
+      icon: linkedinIcon,
+    },
+    {
+      title: "resume",
+      href: resume,
+      target: "_blank",
+      rel: "noopener noreferrer",
+      icon: resumeIcon,
+    },
+    { title: "blog", href: "/PersonalSite/#/blog", icon: blogIcon },
+  ];
+
   return (
     <div className="bottomNav">
       <div className="socials">
-        <a title="github" href="https://github.com/delyan-kirov/">
-          <img
-            src={require("./github.png")}
-            alt="github"
-            style={{ width: "40px", height: "40px" }}
-          />
-        </a>
-        <a title="email" href="" onClick={handleEmailClick}>
-          <img
-            src={require("./email.png")}
-            alt="email"
-            style={{ width: "40px", height: "40px" }}
-          />
-        </a>
-        <a
-          title="linkedin"
-          href="https://www.linkedin.com/in/delyan-kirov-7132401a6"
-        >
-          <img
-            src={require("./linkedin.png")}
-            alt="linkedin"
-            style={{ width: "40px", height: "40px" }}
-          />
-        </a>
-        <a
-          title="resume"
-          href={resume}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <img
-            src={require("./resume.png")}
-            alt="resume"
-            style={{ width: "40px", height: "40px" }}
-          />
-        </a>
-        <a title="blog" href="/PersonalSite/#/blog">
-          <img
-            src={require("./blog.png")}
-            style={{ width: "40px", height: "40px" }}
-          />
-        </a>
+        {socialIcons.map((icon, index) => (
+          <a
+            key={index}
+            title={icon.title}
+            href={icon.href}
+            onClick={icon.onClick}
+            target={icon.target}
+            rel={icon.rel}
+          >
+            <img
+              src={icon.icon}
+              alt={icon.title}
+              style={{
+                width: "2pc",
+                height: "2pc",
+              }}
+            />
+          </a>
+        ))}
       </div>
     </div>
   );
