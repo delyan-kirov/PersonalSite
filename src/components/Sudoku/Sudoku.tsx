@@ -1,8 +1,10 @@
 import React, { useEffect, useState } from "react";
 import "./Sudoku.css";
+import TopBar from "../TopBar/TopBar";
+import BottomBar from "../BottomBar/BottomBar";
 
 const App: React.FC = () => {
-  const initialBoard = [
+  const initialBoard: number[][] = [
     [5, 0, 4, 6, 7, 8, 9, 1, 2],
     [6, 0, 2, 1, 9, 5, 3, 4, 8],
     [1, 9, 0, 3, 4, 2, 5, 6, 7],
@@ -14,16 +16,16 @@ const App: React.FC = () => {
     [3, 4, 5, 2, 8, 6, 1, 7, 0],
   ];
 
-  const finalBoard = [
-    [5, 0, 4, 6, 7, 8, 9, 1, 2],
-    [6, 0, 2, 1, 9, 5, 3, 4, 8],
-    [1, 9, 0, 3, 4, 2, 5, 6, 7],
-    [8, 5, 9, 7, 6, 1, 4, 0, 3],
-    [4, 2, 6, 8, 5, 0, 0, 0, 1],
-    [7, 1, 0, 9, 2, 4, 8, 5, 6],
-    [9, 6, 1, 5, 0, 7, 0, 8, 0],
-    [2, 8, 7, 4, 1, 9, 6, 3, 0],
-    [3, 4, 5, 2, 8, 6, 1, 7, 0],
+  const finalBoard: number[][] = [
+    [5, 3, 4, 6, 7, 8, 9, 1, 2],
+    [6, 7, 2, 1, 9, 5, 3, 4, 8],
+    [1, 9, 8, 3, 4, 2, 5, 6, 7],
+    [8, 5, 9, 7, 6, 1, 4, 2, 3],
+    [4, 2, 6, 8, 5, 3, 7, 9, 1],
+    [7, 1, 3, 9, 2, 4, 8, 5, 6],
+    [9, 6, 1, 5, 3, 7, 2, 8, 4],
+    [2, 8, 7, 4, 1, 9, 6, 3, 5],
+    [3, 4, 5, 2, 8, 6, 1, 7, 9],
   ];
 
   const [board, setBoard] = useState<number[][]>(initialBoard);
@@ -123,17 +125,27 @@ const App: React.FC = () => {
 
   return (
     <div className="App">
-      <h1>Sudoku</h1>
-      <div className="SudokuBoard">
-        <table>
-          <tbody>{board.map(renderRow)}</tbody>
-        </table>
-      </div>
-      <div>
-        <button className="CheckResult" onClick={checkResult}>
-          Check result
-        </button>
-      </div>
+      <header className="App-header">
+        <div>
+          <TopBar />
+        </div>
+        <h1></h1>
+        <h1>Sudoku</h1>
+        <div className="SudokuBoard">
+          <table>
+            <tbody>{board.map(renderRow)}</tbody>
+          </table>
+        </div>
+        <div>
+          <button className="CheckResult" onClick={checkResult}>
+            Check result
+          </button>
+        </div>
+        <h1></h1>
+        <div>
+          <BottomBar />
+        </div>
+      </header>
     </div>
   );
 };
