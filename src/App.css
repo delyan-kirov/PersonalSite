@@ -4,6 +4,7 @@
 }
 
 .App-header {
+  overflow: hidden;
   background-color: #000823;
   min-height: 100vh;
   display: flex;
@@ -38,18 +39,15 @@ b {
   color: lightgreen;
 }
 
-/* WebKit (Chrome, Safari) */
-::-webkit-scrollbar {
-  background-color: #000823; /* color of the thumb */
-  width: 3px;
-  z-index: -1;
+@-moz-document url-prefix() {
+  html {
+    scrollbar-width: thin;
+    scrollbar-color: lightblue rgba(0, 10, 100, 1);
+  }
 }
 
-::-webkit-scrollbar-thumb {
-  background-color: rgba(80, 80, 200, 1); /* color of the thumb */
-  border-radius: 10px;
-}
-
-::-webkit-scrollbar:hover {
-  background-color: white; /* color of the thumb when hovered */
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+  ::-webkit-scrollbar {
+    display: none;
+  }
 }

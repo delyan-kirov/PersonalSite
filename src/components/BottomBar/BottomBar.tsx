@@ -40,7 +40,7 @@ function TopBar() {
   ];
 
   return (
-    <div className="bottomNav">
+    <div className="BottomBar">
       <div className="socials">
         {socialIcons.map((icon, index) => (
           <a

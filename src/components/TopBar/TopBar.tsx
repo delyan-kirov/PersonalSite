@@ -12,7 +12,7 @@ function TopBar() {
     window.location.href = mailtoLink;
   };
   return (
-    <div className="topnav">
+    <div className="TopBar">
       <div className="socials">
         <a title="About" href="/PersonalSite/#">About</a>
         <a title="Blog" href="/PersonalSite/#/blog">Blog</a>

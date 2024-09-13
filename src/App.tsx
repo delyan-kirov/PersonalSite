@@ -3,7 +3,6 @@ import "./App.css";
 import About from "./components/About/About";
 import { HashRouter as Router, Route, Routes } from "react-router-dom";
 import BlogPosts from "./components/BlogPosts/BlogPosts";
-import Post1 from "./components/Posts/Post1";
 import Sudoku from "./components/Sudoku/Sudoku";
 
 const App: React.FC = () => {
@@ -13,7 +12,6 @@ const App: React.FC = () => {
         <Routes>
           <Route path="/blog" element={<BlogPosts />} />
           <Route path="/" element={<About />} />
-          <Route path="/post1" element={<Post1 />} />
           <Route path="/sudoku" element={<Sudoku />} />
         </Routes>
       </div>

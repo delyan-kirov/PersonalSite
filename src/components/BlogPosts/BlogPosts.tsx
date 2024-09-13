@@ -3,8 +3,7 @@ import "./BlogPosts.css";
 import TopBar from "../TopBar/TopBar";
 import { motion } from "framer-motion";
 import BottomBar from "../BottomBar/BottomBar";
-import PorstPhoto1 from "../Posts/mytikzpicture.png";
-import PorstPhoto2 from "../Posts/sudoku.png";
+import PostPhoto2 from "../Posts/sudoku.png";
 
 function BlogPosts() {
   var i = 0.4;
@@ -64,18 +63,11 @@ function BlogPosts() {
 
         <div className="BlogList">
           {blogEntrie(
-            "Haskell",
-            "A short Haskell tutorial",
-            new Date(2024, 0, 1),
-            "/PersonalSite/#/post1",
-            PorstPhoto1,
-          )}
-          {blogEntrie(
             "Sudoku",
             "A quick demo of my sudoku web application",
             new Date(2024, 0, 1),
             "/PersonalSite/#/sudoku",
-            PorstPhoto2,
+            PostPhoto2,
           )}
         </div>
 

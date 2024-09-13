@@ -76,7 +76,7 @@ function About() {
         </motion.div>
 
         <div>
-          <p className="show-p"></p>
+          <p className="About-show-p"></p>
           <br></br>
           <div style={{ margin: "2vh" }}>
             <p>
@@ -112,7 +112,7 @@ function About() {
               >
                 {showPopup && (
                   <div
-                    className="popup"
+                    className="About-popup"
                     style={{ top: position.y, left: position.x }}
                   >
                     {popupMessage}

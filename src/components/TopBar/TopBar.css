@@ -1,4 +1,4 @@
-.topnav {
+.TopBar {
   position: fixed;
   display: flex;
   top: 0;
@@ -14,17 +14,17 @@
   -webkit-backdrop-filter: blur(3px);
 }
 
-.topnav a {
+.TopBar a {
   padding: 14px;
   text-decoration: none;
   border-radius: 20px;
   color: rgba(251, 251, 251, 0.921);
 }
 
-.topnav a:hover {
+.TopBar a:hover {
   color: lightgreen;
 }
 
-.sepTopNav {
+.sep TopBar {
   width: 100%;
 }
